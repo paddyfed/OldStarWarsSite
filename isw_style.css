@@ -1,23 +1,23 @@
-BODY { BACKGROUND: #FFFFFF; }
-.mid { BACKGROUND: #FFFFFF; }
-.lgreen { BACKGROUND: #B5F7B5; }
-.notice { color: #FF0000; }
-
-A { text-decoration: underline; }
-A.news:link { text-decoration: underline; color: #008000; }
-A.news:visited { text-decoration: underline; color: #008000; }
-A.news:active { text-decoration: none; color: #008000; }
-A.news:hover { text-decoration: none; color: #FF8000; }
-A:link { text-decoration: underline; color: #008000; }
-A:visited { text-decoration: underline; color: #008000; }
-A:active { text-decoration: none; color: #008000; }
-A:hover { text-decoration: none; color: #FF8000; }
-
-A.plain { text-decoration: none; }
-A.plain:link { text-decoration: none; }
-A.plain:visited { text-decoration: none; }
-A.plain:active { text-decoration: none; }
-A.plain:hover { text-decoration: none; }
-
-td.member { text-decoration: none; color: #FF0000; }
-tr.member { text-decoration: none; color: #FF0000; }
+BODY { BACKGROUND: #FFFFFF; }
+.mid { BACKGROUND: #FFFFFF; }
+.lgreen { BACKGROUND: #B5F7B5; }
+.notice { color: #FF0000; }
+
+A { text-decoration: underline; }
+A.news:link { text-decoration: underline; color: #008000; }
+A.news:visited { text-decoration: underline; color: #008000; }
+A.news:active { text-decoration: none; color: #008000; }
+A.news:hover { text-decoration: none; color: #FF8000; }
+A:link { text-decoration: underline; color: #008000; }
+A:visited { text-decoration: underline; color: #008000; }
+A:active { text-decoration: none; color: #008000; }
+A:hover { text-decoration: none; color: #FF8000; }
+
+A.plain { text-decoration: none; }
+A.plain:link { text-decoration: none; }
+A.plain:visited { text-decoration: none; }
+A.plain:active { text-decoration: none; }
+A.plain:hover { text-decoration: none; }
+
+td.member { text-decoration: none; color: #FF0000; }
+tr.member { text-decoration: none; color: #FF0000; }

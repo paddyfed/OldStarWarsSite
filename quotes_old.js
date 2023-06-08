@@ -1,7 +1,7 @@
 // quotes
 
 //store the quotations in arrays
-quotes = new Array(34);
+quotes = new Array(38);
 quotes[0] = "May the force be with you.";
 quotes[1] = "No! No different! Only different in your mind.";
 quotes[2] = "Hard to see, the dark side is.";
@@ -35,7 +35,11 @@ quotes[29]="Ready, are you? What know you of ready?";
 quotes[30]="Anger...fear...aggression. The dark side of the Force are they.";
 quotes[31]="Fear is the path to the dark side.";
 quotes[32]="For my ally is the Force. And a powerful ally it is.";
-quotes[33]="Hey, dude!";
+quotes[33]="Dangerous and disturbing, this puzzle is";
+quotes[34]="The Dark Side clouds everything";
+quotes[35]="In grave danger you are";
+quotes[36]="Begun this clone war has";
+quotes[37]="Hey, dude!";
 //calculate a random index
 index = Math.floor(Math.random() * quotes.length);
 //display the quotation
