@@ -7,9 +7,9 @@
 <META NAME="AUTHOR" CONTENT="PaddyFedoo">
 <META NAME="DESCRIPTION" CONTENT="The unofficial Irish Star Wars fan club on the Internet">
 <META NAME="KEYWORDS" CONTENT="Ireland Irish Star Wars Fan Club Liam Neeson Bronagh Gallagher ISW PaddyFedoo">
-<!--<script language="Javascript">
+<script language="Javascript">
 window.open("poll.html","iswpoll","scrollbars");
-</script>-->
+</script>
 <LINK REL="STYLESHEET" TYPE="text/css" HREF="isw_style.css">
 
 <BODY BGCOLOR="#FFFFFF" TEXT="#008000" LINK="#008000" VLINK="#008000" ALINK="#FF8000" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0" BOTTOMMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">

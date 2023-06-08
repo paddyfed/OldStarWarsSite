@@ -29,11 +29,11 @@ document.write('<p align="center"><BR><BR><img src="sys_rule.gif" width="120" he
 // document.write("</h3>");
 
 // document.write('<p align="center"><a href="http://www.starwars.com/episode-ii/select" targt="_blank"><img src="http://www.starwars.com/episode-ii/select/mini_select/img/mini_select.jpg" height="82" width="213" border="0" alt="Episode II Select"></a><BR>');
-
+/*
 document.write('<p align="center"><a href="http://www.starwars.com/swtoday/photos.html" target="_blank"><img src="http://www.starwars.com/homestead/elements/snapshot/homesteadSnapshot.jpg" height="82" width="213"  border="0" alt="Star Wars Snapshot"></a></p>');
 document.write('<a href="http://www.starwars.com/episode-ii/imageattack" "target="_blank"><img src="http://www.starwars.com/episode-ii/imageattack/mini_attack/img/mini_attack.jpg" height="82" width="213" border="0" alt="Image Attack"></a></p>');
 
 document.write('<p align="center"><img src="sys_rule.gif" width="120" height="10" alt="-"></p>');
-
+*/
 // document.write('<a href="http://www.galacticempire.co.uk/features/interactive.shtml" target="_blank"><img src="sys_interact.gif" width="104" height="64" border="0" alt="Galactic Empire UK presents: Star Wars Galaxy Interactive Map"></a>');
 // document.write('<p align="center"><img src="sys_rule.gif" width="120" height="10" alt="-"></p>');
