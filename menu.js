@@ -1,3 +1,0 @@
-// top menu
-
-document.write('<H5 ALIGN="CENTER">[ <A HREF="news.html">Main</A> : <A HREF="mem.html">Members</A> : <A HREF="join.html">Join</A> : <A HREF="ed.html">Editorial</A> : <!-- <A HREF="http://cgi.imperialsenate.co.uk/cgi-bin/forumdisplay.cgi?action=topics&number=15&start=here" TARGET="_blank">Forum</A> : <A HREF="chat.html">ISW Chat</A> : --><A HREF="triv_res.html">Trivia</A> : <A HREF="req.html">Requests</A> ]<BR>[ <A HREF="link.html">Links</A> : <A HREF="link_tous.html">Link to us</A> : <A HREF="arc.html">Archive</A> : <A HREF="cont.html">Contact me</A> ]</H5>');
