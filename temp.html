@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE>The [UNOFFICIAL] Irish Star Wars Fan Club : Menu</TITLE>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="irishstyle.css">
+
+<script language="JavaScript">
+<!--
+
+function WM_preloadImages() {
+
+/*
+WM_preloadImages()
+Loads images into the browser's cache for later use.
+
+Source: Webmonkey Code Library
+(http://www.hotwired.com/webmonkey/javascript/code_library/)
+
+Author: Nadav Savio
+Author Email: nadav@wired.com
+
+Usage: WM_preloadImages('image 1 URL', 'image 2 URL', 'image 3 URL', ...);
+*/
+
+  // Don't bother if there's no document.images
+  if (document.images) {
+    if (typeof(document.WM) == 'undefined'){
+      document.WM = new Object();
+    }
+    document.WM.loadedImages = new Array();
+    // Loop through all the arguments.
+    var argLength = WM_preloadImages.arguments.length;
+    for(arg=0;arg<argLength;arg++) {
+      // For each arg, create a new image.
+      document.WM.loadedImages[arg] = new Image();
+      // Then set the source of that image to the current argument.
+      document.WM.loadedImages[arg].src = WM_preloadImages.arguments[arg];
+    }
+  }
+}
+
+
+// -->
+
+</script>
+</HEAD>
+<BODY BACKGROUND="new_menu.gif" BGPROPERTIES="fixed" BGCOLOR="#FFFFFF" TEXT="#008000" LINK="#008000" VLINK="#FF8000" ALINK="#FF8000" onLoad="WM_preloadImages('link_main_on.gif','link_mem_on.gif','link_join_on.gif','link_ed_on.gif','link_for_on.gif','link_req_on.gif','link_link_on.gif','link_ltu_on.gif','link_arc_on.gif','link_cont_on.gif','link_con_on.gif');">
+
+<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+
+<TR><TD WIDTH="5%"></TD><TD WIDTH="*"><P><H3>Menu:</H3></P>
+<FONT SIZE="2">
+
+<A HREF="news.html" TARGET="isw_main" onMouseOver="document.link_main.src='link_main_on.gif';" onMouseOut="document.link_main.src='link_main_off.gif';"><IMG SRC="link_main_off.gif" ALT="Main" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_main"></A><BR>
+
+<A HREF="mem.html" TARGET="isw_main" onMouseOver="document.link_mem.src='link_mem_on.gif';" onMouseOut="document.link_mem.src='link_mem_off.gif';"><IMG SRC="link_mem_off.gif" ALT="Members" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_mem"></A><BR>
+
+<A HREF="join.html" TARGET="isw_main" onMouseOver="document.link_join.src='link_join_on.gif';" onMouseOut="document.link_join.src='link_join_off.gif';"><IMG SRC="link_join_off.gif" ALT="Join" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_join"></A><BR>
+
+<A HREF="ed.html" TARGET="isw_main" onMouseOver="document.link_ed.src='link_ed_on.gif';" onMouseOut="document.link_ed.src='link_ed_off.gif';"><IMG SRC="link_ed_off.gif" ALT="Editorial" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_ed"></A><BR>
+
+<A HREF="http://cgi.galacticempire.net/cgi-bin/forumdisplay.cgi?action=topics&number=15&start=here" TARGET="_blank" onMouseOver="document.link_for.src='link_for_on.gif';" onMouseOut="document.link_for.src='link_for_off.gif';"><IMG SRC="link_for_off.gif" ALT="Forum" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_for"></A><BR>
+
+<A HREF="404.html" TARGET="isw_main" onMouseOver="document.link_req.src='link_req_on.gif';" onMouseOut="document.link_req.src='link_req_off.gif';"><IMG SRC="link_req_off.gif" ALT="Requests" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_req"></A><BR>
+
+<A HREF="link.html" TARGET="isw_main" onMouseOver="document.link_link.src='link_link_on.gif';" onMouseOut="document.link_link.src='link_link_off.gif';"><IMG SRC="link_link_off.gif" ALT="Links" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_link"></A><BR>
+
+<A HREF="link_tous.html" TARGET="isw_main" onMouseOver="document.link_ltu.src='link_ltu_on.gif';" onMouseOut="document.link_ltu.src='link_ltu_off.gif';"><IMG SRC="link_ltu_off.gif" ALT="Link to us" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_ltu"></A><BR>
+
+<A HREF="arc.html" TARGET="isw_main" onMouseOver="document.link_arc.src='link_arc_on.gif';" onMouseOut="document.link_arc.src='link_arc_off.gif';"><IMG SRC="link_arc_off.gif" ALT="Archive" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_arc"></A><BR>
+
+<A HREF="cont.html" TARGET="isw_main" onMouseOver="document.link_cont.src='link_cont_on.gif';" onMouseOut="document.link_cont.src='link_cont_off.gif';"><IMG SRC="link_cont_off.gif" ALT="Contact me" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_cont"></A><BR>
+
+<!--
+<A HREF="swcon.html" TARGET="isw_main" onMouseOver="document.link_con.src='link_con_on.gif';" onMouseOut="document.link_con.src='link_con_off.gif';"><IMG SRC="link_con_off.gif" ALT="SW Convention" HEIGHT="12" WIDTH="100" HSPACE="0" VSPACE="0" BORDER="0" name="link_con"></A></FONT>
+-->
+<br>
+
+</TD></TR>
+</TABLE>
+</HTML></BODY>
