@@ -1,6 +1,6 @@
 // header
 
-const mainHeader = document.querySelector('header')
+const mainHeader = document.querySelector('header');
 
 const yodaImg = document.createElement('img');
 yodaImg.src="yoda.png";

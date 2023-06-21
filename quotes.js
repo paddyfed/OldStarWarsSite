@@ -43,6 +43,13 @@ const index = Math.floor(Math.random() * quotes.length);
 
 //display the quotation
 
-document.write("" + "\"" + quotes[index] + "\"\n");
+const mainSection = document.querySelector('main');
+
+const pQuote = document.createElement('p');
+pQuote.textContent = `"${quotes[index]}"`;
+
+mainSection.prepend(pQuote);
+
+// document.write("" + "\"" + quotes[index] + "\"\n");
 
 //done
