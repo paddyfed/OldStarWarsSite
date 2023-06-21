@@ -421,3 +421,22 @@ a[target="_blank"]::after {
 
 p:last-child { margin-bottom: 0 !important; margin-right: 0 !important; }
 p:first-child { margin-top: 0 !important; margin-right: 0 !important; }
+
+article h1 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+main h1 {
+  margin-top: 0;
+
+}
+
+article.members {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
