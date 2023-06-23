@@ -26,7 +26,7 @@ const menuItems = [
     { url: 'main.html', linkText: 'Main' },
     { url: 'member.html', linkText: 'Members' },
     { url: 'join.html', linkText: 'Join' },
-    { url: 'edit.html', linkText: 'Editorial' },
+    { url: 'editorials.html', linkText: 'Editorial' },
     { url: 'rteguide.html', linkText: 'RTE Guide' },
     { url: 'trivia.html', linkText: 'Trivia' },
     { url: 'poll.html', linkText: 'Poll' },
@@ -53,3 +53,46 @@ menuHeading.textContent = "Menu";
 
 menu.appendChild(menuHeading);
 menu.appendChild(menuUl);
+
+// previous editorials
+
+const editorials = [
+    { url: 'editorial_01.html', title: 'Patience is a Virtue', author: 'PaddyFedoo', date: '2001-01-03', replies: 1 },
+    { url: 'editorial_02.html', title: 'Meeting the Stars', author: 'Jade', date: '2001-01-08', replies: 0 },
+    { url: 'editorial_03.html', title: 'Fresh Lick of Paint...', author: 'PaddyFedoo', date: '2001-03-13', replies: 0 },
+    { url: 'editorial_04.html', title: 'The Price of Hosting', author: 'PaddyFedoo', date: '2001-07-12', replies: 0 },
+    { url: 'editorial_05.html', title: 'The Journey Home', author: 'PaddyFedoo', date: '2002-06-14', replies: 0 },
+];
+
+const editorialsSection = document.querySelector('section.previous-editorials');
+
+editorials.forEach(article => {
+    let p = document.createElement('p');
+    let titleSpan = document.createElement('b');
+    let editorialLink = document.createElement('a');
+    let authorSpan = document.createElement('span');
+    let articleDate = document.createElement('time');
+    let repliesSpan = document.createElement('span');
+
+    editorialLink.href = article.url;
+    editorialLink.textContent = article.title;
+
+    // p.textContent = `${article.title} -- ${article.author}, ${article.date} -- Replies: ${article.replies}`
+
+    titleSpan.appendChild(editorialLink);
+    
+    authorSpan.textContent = article.author;
+    // authorSpan.className = 'authorSpan';
+
+    articleDate.dateTime = article.date;
+    articleDate.textContent = new Date(article.date).toLocaleDateString(undefined, { dateStyle: "long" });
+
+    repliesSpan.textContent = `Replies: ${article.replies}`;
+    
+    p.appendChild(titleSpan);
+    p.append(authorSpan);
+    p.append(articleDate);
+    p.append(repliesSpan);
+
+    editorialsSection.appendChild(p);
+});

@@ -440,3 +440,7 @@ article.members {
   gap: 2em;
 }
 
+section.previous-editorials p {
+  display: flex;
+  gap: 2em;
+}
