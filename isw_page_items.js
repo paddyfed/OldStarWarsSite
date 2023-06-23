@@ -3,16 +3,16 @@
 const mainHeader = document.querySelector('header');
 
 const yodaImg = document.createElement('img');
-yodaImg.src="yoda.png";
-yodaImg.width="229";
-yodaImg.height="200";
-yodaImg.alt="Yoda";
+yodaImg.src = "yoda.png";
+yodaImg.width = "229";
+yodaImg.height = "200";
+yodaImg.alt = "Yoda";
 
 const mainImg = document.createElement('img');
-mainImg.src="image2.png";
-mainImg.width="530";
-mainImg.height="200";
-mainImg.alt="ISW";
+mainImg.src = "image2.png";
+mainImg.width = "530";
+mainImg.height = "200";
+mainImg.alt = "ISW";
 
 mainHeader.appendChild(yodaImg);
 mainHeader.appendChild(mainImg);
@@ -56,43 +56,46 @@ menu.appendChild(menuUl);
 
 // previous editorials
 
-const editorials = [
-    { url: 'editorial_01.html', title: 'Patience is a Virtue', author: 'PaddyFedoo', date: '2001-01-03', replies: 1 },
-    { url: 'editorial_02.html', title: 'Meeting the Stars', author: 'Jade', date: '2001-01-08', replies: 0 },
-    { url: 'editorial_03.html', title: 'Fresh Lick of Paint...', author: 'PaddyFedoo', date: '2001-03-13', replies: 0 },
-    { url: 'editorial_04.html', title: 'The Price of Hosting', author: 'PaddyFedoo', date: '2001-07-12', replies: 0 },
-    { url: 'editorial_05.html', title: 'The Journey Home', author: 'PaddyFedoo', date: '2002-06-14', replies: 0 },
-];
+if (document.querySelector('section.previous-editorials'))
+{
+    const editorials = [
+        { url: 'editorial_01.html', title: 'Patience is a Virtue', author: 'PaddyFedoo', date: '2001-01-03', replies: 1 },
+        { url: 'editorial_02.html', title: 'Meeting the Stars', author: 'Jade', date: '2001-01-08', replies: 0 },
+        { url: 'editorial_03.html', title: 'Fresh Lick of Paint...', author: 'PaddyFedoo', date: '2001-03-13', replies: 0 },
+        { url: 'editorial_04.html', title: 'The Price of Hosting', author: 'PaddyFedoo', date: '2001-07-12', replies: 0 },
+        { url: 'editorial_05.html', title: 'The Journey Home', author: 'PaddyFedoo', date: '2002-06-14', replies: 0 },
+    ];
 
-const editorialsSection = document.querySelector('section.previous-editorials');
+    const editorialsSection = document.querySelector('section.previous-editorials');
 
-editorials.forEach(article => {
-    let p = document.createElement('p');
-    let titleSpan = document.createElement('b');
-    let editorialLink = document.createElement('a');
-    let authorSpan = document.createElement('span');
-    let articleDate = document.createElement('time');
-    let repliesSpan = document.createElement('span');
+    editorials.forEach(article => {
+        let p = document.createElement('p');
+        let titleSpan = document.createElement('b');
+        let editorialLink = document.createElement('a');
+        let authorSpan = document.createElement('span');
+        let articleDate = document.createElement('time');
+        let repliesSpan = document.createElement('span');
 
-    editorialLink.href = article.url;
-    editorialLink.textContent = article.title;
+        editorialLink.href = article.url;
+        editorialLink.textContent = article.title;
 
-    // p.textContent = `${article.title} -- ${article.author}, ${article.date} -- Replies: ${article.replies}`
+        // p.textContent = `${article.title} -- ${article.author}, ${article.date} -- Replies: ${article.replies}`
 
-    titleSpan.appendChild(editorialLink);
-    
-    authorSpan.textContent = article.author;
-    // authorSpan.className = 'authorSpan';
+        titleSpan.appendChild(editorialLink);
 
-    articleDate.dateTime = article.date;
-    articleDate.textContent = new Date(article.date).toLocaleDateString(undefined, { dateStyle: "long" });
+        authorSpan.textContent = article.author;
+        // authorSpan.className = 'authorSpan';
 
-    repliesSpan.textContent = `Replies: ${article.replies}`;
-    
-    p.appendChild(titleSpan);
-    p.append(authorSpan);
-    p.append(articleDate);
-    p.append(repliesSpan);
+        articleDate.dateTime = article.date;
+        articleDate.textContent = new Date(article.date).toLocaleDateString(undefined, { dateStyle: "long" });
 
-    editorialsSection.appendChild(p);
-});
+        repliesSpan.textContent = `Replies: ${article.replies}`;
+
+        p.appendChild(titleSpan);
+        p.append(authorSpan);
+        p.append(articleDate);
+        p.append(repliesSpan);
+
+        editorialsSection.appendChild(p);
+    });
+}
