@@ -494,3 +494,33 @@ section.previous-editorials p {
 .medal-bronze {
   color: #CD7F32;
 }
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+label[required]::after {
+  color: red;
+  font: var(--fa-font-solid);
+  content: "\2a";
+  margin-left: .3em;
+  font-size: xx-small;
+  vertical-align: text-top;
+}
+
+input {
+  padding: .2em .3em;
+  border-radius: .2em;
+  border: 1px solid gray;
+}
+
+select {
+  padding-top: .2em;
+  padding-bottom: .2em;
+  border-radius: .2em;
+  border: 1px solid gray;
+}
+
