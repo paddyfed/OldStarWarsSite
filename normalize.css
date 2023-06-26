@@ -524,3 +524,7 @@ select {
   border: 1px solid gray;
 }
 
+textarea {
+  resize: none;
+}
+
