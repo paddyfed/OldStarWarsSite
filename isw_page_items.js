@@ -27,7 +27,7 @@ const menuItems = [
     { url: 'member.html', linkText: 'Members' },
     { url: 'join.html', linkText: 'Join' },
     { url: 'editorials.html', linkText: 'Editorial' },
-    { url: 'rteguide.html', linkText: `RT${String.fromCharCode(201)} Guide` }, // Char code 201 is for É
+    { url: 'rteguide.html', linkText: `RTÉ Guide` }, // Char code 201 is for É
     { url: 'trivia.html', linkText: 'Trivia' },
     { url: 'poll.html', linkText: 'Poll' },
     { url: 'pollresults.html', linkText: 'Poll Results' },
