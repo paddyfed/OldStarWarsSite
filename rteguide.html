@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="normalize.css">
     <script language="javascript" src="isw_page_items.js" defer></script>
     <script language="javascript" src="quotes.js" defer></script>
+
 </head>
 
 <body>
@@ -23,48 +24,61 @@
         <article class="members">
             <section>
                 <h2>December 2002</h2>
-                <p><a href="rteguide_epiguide.jpg">Episode I article</a></p>
-                <p><a href="rteguide_quigonpic.jpg">Qui-Gon Jinn picture</a></p>
+                <p><a href="#" onclick="showImage('rteguide_epiguide.jpg'); return false;">Episode I article</a></p>
+                <p><a href="#" onclick="showImage('rteguide_quigonpic.jpg'); return false;">Qui-Gon Jinn picture</a></p>
             </section>
             <section>
                 <h2>November 2002</h2>
-                <p><a href="rteguide_ewanart.jpg">Ewan McGregor Short Article</a></p>
-                <p><a href="rteguide_ewanpic.jpg">Picture for Article</a></p>
+                <p><a href="#" onclick="showImage('rteguide_ewanart.jpg'); return false;">Ewan McGregor Short Article</a></p>
+                <p><a href="#" onclick="showImage('rteguide_ewanpic.jpg'); return false;">Picture for Article</a></p>
             </section>
             <section>
                 <h2>September 2002</h2>
-                <p><a href="rteguide_nataliestar.jpg">Natalie Portman: Star of the Week</a></p>
-                <p><a href="rteguide_tpmad.jpg">Episode I review</a></p>
+                <p><a href="#" onclick="showImage('rteguide_nataliestar.jpg'); return false;">Natalie Portman: Star of the Week</a></p>
+                <p><a href="#" onclick="showImage('rteguide_tpmad.jpg'); return false;">Episode I review</a></p>
             </section>
             <section>
                 <h2>August 2002</h2>
-                <p><a href="rteguide_neesonstar.jpg">Liam Neeson: Star of the Week</a></p>
+                <p><a href="#" onclick="showImage('rteguide_neesonstar.jpg'); return false;">Liam Neeson: Star of the Week</a></p>
             </section>
             <section>
                 <h2>June 2002</h2>
-                <p><a href="rteguide_cloneranger.jpg">Heading of article</a></p>
-                <p><a href="rteguide_clones.jpg">Picture of Anakin, Padmé and Clonetroopers</a></p>
-                <p><a href="rteguide_dooku.jpg">Count Dooku</a></p>
-                <p><a href="rteguide_leeintvw.jpg">Christopher Lee interview</a></p>
-                <p><a href="rteguide_ianintvw.jpg">Ian McDiarmid interview</a></p>
-                <p><a href="rteguide_samintvw.jpg">Samuel L. Jackson interview</a></p>
-                <p><a href="rteguide_jango.jpg">Short review of Attack of the Clones</a></p>
+                <p><a href="#" onclick="showImage('rteguide_cloneranger.jpg'); return false;">Heading of article</a></p>
+                <p><a href="#" onclick="showImage('rteguide_clones.jpg'); return false;">Picture of Anakin, Padmé and Clonetroopers</a></p>
+                <p><a href="#" onclick="showImage('rteguide_dooku.jpg'); return false;">Count Dooku</a></p>
+                <p><a href="#" onclick="showImage('rteguide_leeintvw.jpg'); return false;">Christopher Lee interview</a></p>
+                <p><a href="#" onclick="showImage('rteguide_ianintvw.jpg'); return false;">Ian McDiarmid interview</a></p>
+                <p><a href="#" onclick="showImage('rteguide_samintvw.jpg'); return false;">Samuel L. Jackson interview</a></p>
+                <p><a href="#" onclick="showImage('rteguide_jango.jpg'); return false;">Short review of Attack of the Clones</a></p>
             </section>
             <section>
                 <h2>May 2002</h2>
-                <p><a href="rteguide_aotc1.jpg">First half of article about Attack of the Clones</a></p>
-                <p><a href="rteguide_aotc2.jpg">Second half of the article</a></p>
+                <p><a href="#" onclick="showImage('rteguide_aotc1.jpg'); return false;">First half of article about Attack of the Clones</a></p>
+                <p><a href="#" onclick="showImage('rteguide_aotc2.jpg'); return false;">Second half of the article</a></p>
             </section>
             <section>
                 <h2>January 2002</h2>
-                <p><a href="rteguide_nsync.jpg">Short article on Nsync and Attack of the Clones</a></p>
-                <p><a href="rteguide_seattle.jpg">Short article about the Seattle line</a></p>
-                <p><a href="rteguide_anakin1.jpg">Article about Hayden as Anakin</a></p>
-                <p><a href="rteguide_anakin2.jpg">Picture of Anakin</a></p>
+                <p><a href="#" onclick="showImage('rteguide_nsync.jpg'); return false;"  >Short article on Nsync and Attack of the Clones</a></p>
+                <p><a href="#" onclick="showImage('rteguide_seattle.jpg'); return false;">Short article about the Seattle line</a></p>
+                <p><a href="#" onclick="showImage('rteguide_anakin1.jpg'); return false;">Article about Hayden as Anakin</a></p>
+                <p><a href="#" onclick="showImage('rteguide_anakin2.jpg'); return false;">Picture of Anakin</a></p>
             </section>
         </article>
     </main>
+    <dialog id="dialogForImage">
+        <img src="" id="dialogImg" />
+        <form>
+        <button value="cancel" formmethod="dialog"><i class="fa fa-times"></i></button></form>
+    </dialog>
     <footer></footer>
+    <script>
+        function showImage(imgSrc) {
+            const dialog = document.getElementById("dialogForImage");
+            const dialogImage = document.getElementById("dialogImg");
+            dialogImage.src = imgSrc;
+            dialog.showModal();
+        }
+    </script>
 </body>
 
 </html>

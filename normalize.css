@@ -528,3 +528,9 @@ textarea {
   resize: none;
 }
 
+#dialogForImage::backdrop {
+  background: rgba(0, 0, 0, .9);
+  overflow:hidden;
+
+  pointer-events: none;
+}
