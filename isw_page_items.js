@@ -98,3 +98,36 @@ if (document.querySelector('section.previous-editorials'))
         editorialsSection.appendChild(p);
     });
 }
+
+// add Dialog to each page
+const mainSection = document.querySelector('main');
+const d = document.createElement('dialog');
+const i = document.createElement('img');
+const f = document.createElement('form');
+const b = document.createElement('button');
+const icon = document.createElement('i');
+
+icon.className='fa fa-times';
+
+b.append(icon);
+f.append(b);
+
+d.id = 'dialogForImage';
+b.value = 'cancel';
+b.formMethod = 'dialog';
+i.id = 'dialogImg';
+i.alt = '';
+d.append(i);
+d.append(f);
+
+mainSection.append(d)
+
+// Showing image in Dialog
+
+function showImage(imgSrc, altText) {
+    const dialog = document.getElementById("dialogForImage");
+    const dialogImage = document.getElementById("dialogImg");
+    dialogImage.src = imgSrc;
+    dialogImage.alt = altText;
+    dialog.showModal();
+}
