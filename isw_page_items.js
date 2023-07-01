@@ -27,13 +27,15 @@ const menuItems = [
     { url: 'member.html', linkText: 'Members' },
     { url: 'join.html', linkText: 'Join' },
     { url: 'editorials.html', linkText: 'Editorial' },
-    { url: 'rteguide.html', linkText: `RTÉ Guide` }, // Char code 201 is for É
+    { url: 'rteguide.html', linkText: `RTÉ Guide` },
     { url: 'trivia.html', linkText: 'Trivia' },
+    { url: 'trivia_res.html', linkText: 'Trivia Results'},
+    { url: 'member_awards.html', linkText: 'Trivia Table'},
     { url: 'poll.html', linkText: 'Poll' },
     { url: 'pollresults.html', linkText: 'Poll Results' },
     { url: 'links.html', linkText: 'Links' },
     { url: 'linktous.html', linkText: 'Link to Us' },
-    { url: 'archive.html', linkText: 'Archives' },
+    { url: 'archive_news.html', linkText: 'News Archives' },
     { url: 'contact.html', linkText: 'Contact Me' },
 ];
 
@@ -79,12 +81,9 @@ if (document.querySelector('section.previous-editorials'))
         editorialLink.href = article.url;
         editorialLink.textContent = article.title;
 
-        // p.textContent = `${article.title} -- ${article.author}, ${article.date} -- Replies: ${article.replies}`
-
         titleSpan.appendChild(editorialLink);
 
         authorSpan.textContent = article.author;
-        // authorSpan.className = 'authorSpan';
 
         articleDate.dateTime = article.date;
         articleDate.textContent = new Date(article.date).toLocaleDateString(undefined, { dateStyle: "long" });
