@@ -101,33 +101,49 @@ if (document.querySelector('section.previous-editorials'))
 
 // add Dialog to each page
 const mainSection = document.querySelector('main');
-const d = document.createElement('dialog');
-const i = document.createElement('img');
-const f = document.createElement('form');
-const b = document.createElement('button');
-const icon = document.createElement('i');
+const dialog = document.createElement('dialog');
+const img = document.createElement('img');
+const form = document.createElement('form');
+const button = document.createElement('button');
+const closeIcon = document.createElement('i');
+const header = document.createElement('header');
+const footer = document.createElement('footer');
+const article = document.createElement('article');
+const h1 = document.createElement('h1');
 
-icon.className='fa fa-times';
+dialog.append(header);
+dialog.append(article);
+dialog.append(footer);
 
-b.append(icon);
-f.append(b);
+header.append(h1);
+header.append(form);
+article.append(img);
 
-d.id = 'dialogForImage';
-b.value = 'cancel';
-b.formMethod = 'dialog';
-i.id = 'dialogImg';
-i.alt = '';
-d.append(i);
-d.append(f);
 
-mainSection.append(d)
+closeIcon.className='fa fa-times';
+
+button.append(closeIcon);
+form.append(button);
+
+dialog.id = 'dialogForImage';
+button.value = 'cancel';
+button.formMethod = 'dialog';
+img.id = 'dialogImg';
+img.alt = '';
+// dialog.append(img);
+// dialog.append(form);
+
+mainSection.append(dialog)
 
 // Showing image in Dialog
 
 function showImage(imgSrc, altText) {
     const dialog = document.getElementById("dialogForImage");
     const dialogImage = document.getElementById("dialogImg");
+    const header = document.querySelector('dialog header h1');
+
     dialogImage.src = imgSrc;
     dialogImage.alt = altText;
+    header.textContent = altText;
     dialog.showModal();
 }

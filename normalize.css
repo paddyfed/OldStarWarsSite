@@ -532,5 +532,44 @@ textarea {
   background: rgba(0, 0, 0, .9);
   overflow:hidden;
 
-  pointer-events: none;
+}
+
+dialog, dialog header, dialog article, dialog footer {
+  padding: 0;
+  border: 0;
+}
+
+dialog article {
+  padding-right: 1em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog footer {
+  padding-top: 1em;
+}
+
+dialog header {
+  display: flex;
+  justify-content: space-between;
+}
+
+dialog header h1 {
+  font-size: 1em;
+  padding: .3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog button {
+  border: 0;
+  background: transparent;
+  padding: .3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
