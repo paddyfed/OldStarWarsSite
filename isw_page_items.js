@@ -23,7 +23,7 @@ mainHeader.appendChild(mainImg);
 const menu = document.querySelector('#menu');
 
 const menuItems = [
-    { url: 'main.html', linkText: 'Main' },
+    { url: 'index.html', linkText: 'Main' },
     { url: 'member.html', linkText: 'Members' },
     { url: 'join.html', linkText: 'Join' },
     { url: 'editorials.html', linkText: 'Editorial' },
