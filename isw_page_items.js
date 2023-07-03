@@ -9,7 +9,7 @@ yodaImg.height = "200";
 yodaImg.alt = "Yoda";
 
 const mainImg = document.createElement('img');
-mainImg.src = "image2.png";
+mainImg.src = "main_banner.png";
 mainImg.width = "530";
 mainImg.height = "200";
 mainImg.alt = "ISW";
